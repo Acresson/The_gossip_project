@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title> Les potins de THP </title>
+  </head>
+  
+  <body>      
+    <h1>Liste des gossips</h1>
+    <ul>
+      <% gossips.each do |gossip| %>
+        <li><%= gossip.author %> : <%= gossip.content %></li>
+      <% end %>
+    </ul>
+
+    <h2> Pour créer ton propre gossip tu peux suivre => <a href="/gossips/new/">Créer un nouveau gossip</a>
+  </body>
+</html>
